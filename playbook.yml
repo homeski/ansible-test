@@ -9,7 +9,8 @@
     - debug:
         msg: "retrieve: {{ lookup('ansible.builtin.config', 'COLOR_CHANGED') }}"
 
-    - shell: ls -la; cat ansible.cfg
+    - shell: ls -la; cat ansible.cfg; pwd
       register: shell_output
+      failed_when: false
 
     - debug: var=shell_output
