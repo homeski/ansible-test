@@ -3,4 +3,4 @@
   gather_facts: false
   tasks:
     - debug:
-        msg: foobar
+        var: ansible_config_file
