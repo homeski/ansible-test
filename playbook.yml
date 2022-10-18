@@ -2,5 +2,6 @@
   connection: local
   gather_facts: false
   tasks:
-    - debug:
-        var: ansible_config_file
+    - debug: var=ansible_config_file
+
+    - debug: msg=foo
