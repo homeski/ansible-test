@@ -7,4 +7,4 @@
     - debug: msg=foo
 
     - debug:
-        msg: "retrieve: {{ lookup('ansible.builtin.config', 'ANSIBLE_COW_PATH') }}"
+        msg: "retrieve: {{ lookup('ansible.builtin.config', 'COLOR_CHANGED') }}"
