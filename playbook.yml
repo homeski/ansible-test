@@ -5,3 +5,6 @@
     - debug: var=ansible_config_file
 
     - debug: msg=foo
+
+    - debug:
+        msg: "retrieve: {{ lookup('ansible.builtin.config', 'ANSIBLE_COW_PATH') }}"
