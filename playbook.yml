@@ -1,5 +1,4 @@
 - hosts: localhost
-  connection: local
   gather_facts: false
   tasks:
     - debug: var=ansible_config_file
@@ -18,3 +17,4 @@
     - community.general.ldap_search:
         dn: "ou=groups,dc=example,dc=com"
       register: foobar
+      delegate_to: localhost
