@@ -14,3 +14,7 @@
       failed_when: false
 
     - debug: var=shell_output
+
+    - community.general.ldap_search:
+        dn: "ou=groups,dc=example,dc=com"
+      register: foobar
